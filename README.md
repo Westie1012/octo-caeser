@@ -1,2 +1,2 @@
-# octo-ceaser
-A simple Html5/Js ceaser shift App.
+# octo-caeser
+A simple Html5/Js caeser shift App.
