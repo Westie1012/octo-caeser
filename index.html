@@ -1,4 +1,4 @@
-g<DOCTYPE HTML>
+<DOCTYPE HTML>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -8,10 +8,12 @@ g<DOCTYPE HTML>
     	<script src="jquery.min.js"></script>
     	<link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
 		<title>Caeser Shift</title>
-		<script src="main.js"></script>
+        <script src="xor4096.min.js"></script>
+        <script src="main.js"></script>
 
 	</head>
 	<body style="text-align: center;">
+    <br>
 		<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 		<form action="" class="form-inline" >
     		<div class="form-group" >
@@ -24,10 +26,11 @@ g<DOCTYPE HTML>
     	
 
     	<div class="btn-group" role="group" aria-label="...">
+            <button class="btn btn-default" type="button" onclick="st_encrypt()">Stronger Encrypt</button>
         	<button class="btn btn-default" type="button" onclick="encrypt()">Encrypt</button>
         	<button class="btn btn-default" type="button" onclick="decrypt()">Decrypt</button>
+            <button class="btn btn-default" type="button" onclick="st_decrypt()">Stronger Decrypt</button>
     	</div>
-
 		<P id="test">
 		</P>
 	</body>
