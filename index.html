@@ -1,4 +1,4 @@
-<DOCTYPE HTML>
+g<DOCTYPE HTML>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -11,17 +11,24 @@
 		<script src="main.js"></script>
 
 	</head>
-	<body>
+	<body style="text-align: center;">
 		<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
-		
+		<form action="" class="form-inline" >
+    		<div class="form-group" >
+        		<input type="text" class="form-control" id='start' placeholder="The text.">
+    		</div>
+    		<div class="form-group">    
+				<input class="form-control" type="number" id="value" placeholder="change"> 
+    		</div>
+    	</form>
+    	
 
-		<input type="number" id="value">
-		<textarea type="text" id="start" class="form-control"></textarea>
+    	<div class="btn-group" role="group" aria-label="...">
+        	<button class="btn btn-default" type="button" onclick="encrypt()">Encrypt</button>
+        	<button class="btn btn-default" type="button" onclick="decrypt()">Decrypt</button>
+    	</div>
 
-		<button type="button" onclick="encrypt()" class="btn btn-lg btn-primary" >Encrypt</button>
-		<button onclick="decrypt()" class="btn btn-lg btn-primary" >Decrypt</button>
 		<P id="test">
-
 		</P>
 	</body>
 </html>
