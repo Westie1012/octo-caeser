@@ -10,6 +10,7 @@ function st_encrypt() {
 		var fchange = (parseInt(change) + rnd)
 		var n_letter = ((n - 32 + fchange) % 90) + 32;
 		result = result + String.fromCharCode(n_letter);
+		alert(result)
 	}
 	document.getElementById('result').innerHTML = result;
 }
@@ -26,6 +27,7 @@ function st_decrypt() {
 		var fchange = (parseInt(change) + rnd);
 		var n_letter = ((((n - 32 - fchange) % 90) + 90) % 90) + 32;
 		result = result + String.fromCharCode(n_letter);
+		alert(result)
 	}
 	document.getElementById('result').innerHTML = result;
 }
