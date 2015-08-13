@@ -1,0 +1,47 @@
+<DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="jquery.min.js"></script>
+		<link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Caeser Shift</title>
+		<script src="xor4096.min.js"></script>
+		<script src="main.js"></script>
+		<link rel="icon" type="image/png" href="img/icon2.png">
+	</head>
+	<body style="text-align: center;">
+		<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+		<div class="pretty-margin">
+			<div class="page-header">
+				<h1>Octo Ceaser</h1>
+			</div>
+		</div>
+		<div class="btn-group" role="group" aria-label="..." style="padding:3px;">
+			<button class="btn btn-default" type="button" onclick="crypt(1)">Encrypt</button>
+			<button class="btn btn-default" type="button" onclick="crypt(-1)">Decrypt</button>
+		</div>
+		<br>
+		<div class="btn-group" role="group" aria-label="..."style="padding:3px;">
+			<button class="btn btn-default" type="button" onclick="st_encrypt()">Stronger Encrypt</button>
+			<button class="btn btn-default" type="button" onclick="st_decrypt()">Stronger Decrypt</button>
+		</div>
+		<br>
+		<form action="" class="form-inline" style="padding: 3;">
+			<div class="form-group" >
+				<input type="text" class="form-control" id='start' placeholder="The text.">
+				<!--<textarea class="form-control" id='start' placeholder="Enter your text here." rows="3" cols="25" style="resize:none;"></textarea>-->
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="number" id="value" value="1" placeholder="change">
+			</div>
+		</form>
+		<!-- <div class="jumbotron" style="position:absolute; left:20%;  width:60%; height:50%; z-index:-2; word-wrap: break-word;"> -->
+		<br>
+		<div class="jumbotron" id="result" style="position:absolute; left:20%;  width:60%; height:50%; z-index:-2; word-wrap: break-word;">
+		</div>
+		<!-- </div> -->
+	</body>
+</html>
