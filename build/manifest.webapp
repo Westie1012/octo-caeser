@@ -1,0 +1,14 @@
+{
+  "name": "Octo Ceaser",
+  "description": "A simple little ceaser cipher app.",
+  "launch_path": "/index.html",
+  "icons": {
+    "512": "/img/icon2.png",
+    "128": "/img/icon2.png"
+  },
+  "developer": {
+    "name": "Alex and Mia",
+    "url": "westie1012.github.com"
+  },
+  "default_locale": "en"
+}
